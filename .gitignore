@@ -1,0 +1,90 @@
+# =====================================
+# Dependencies
+# =====================================
+node_modules/
+.bun/
+.pnp/
+.pnp.js
+
+# =====================================
+# Build / Output
+# =====================================
+dist/
+build/
+out/
+coverage/
+artifacts/
+cache/
+
+# =====================================
+# TypeScript
+# =====================================
+*.tsbuildinfo
+
+# =====================================
+# Foundry (forge)
+# =====================================
+out/
+broadcast/
+cache/
+lib/
+
+# =====================================
+# Hardhat
+# =====================================
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# =====================================
+# CRE (Chainlink Runtime)
+# =====================================
+.cre/
+.cre-cache/
+.cre-deployments/
+.workflow-temp-*
+tmp.js
+tmp.wasm
+
+# =====================================
+# Environment & Secrets (CRITICAL)
+# =====================================
+.env
+.env.*
+!.env.example
+
+# Private keys / wallets
+private.key
+wallet.json
+secrets.json
+keystore/
+*.keystore
+
+# =====================================
+# Logs
+# =====================================
+*.log
+npm-debug.log*
+bun-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =====================================
+# OS Files
+# =====================================
+.DS_Store
+Thumbs.db
+
+# =====================================
+# IDE
+# =====================================
+.vscode/
+.idea/
+*.code-workspace
+
+# =====================================
+# Misc
+# =====================================
+*.tmp
+*.swp
