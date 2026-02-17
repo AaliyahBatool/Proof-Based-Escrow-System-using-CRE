@@ -30,7 +30,7 @@ contract Escrow {
 
     //events
     event EscrowCreated(uint256 indexed escrowId, address indexed beneficiary, uint256 amount);
-    event ProofSubmitted(uint256 escrowId, string proofRef);
+    event ProofSubmitted(uint256 indexed escrowId, address indexed beneficiary, string proofRef);
     event EscrowApproved(uint256 indexed escrowId);
     event EscrowRejected(uint256 indexed escrowId);
     event FundsReleased(uint256 indexed escrowId);
@@ -85,12 +85,13 @@ contract Escrow {
         EscrowData storage escrow = escrows[escrowId];
 
         require(msg.sender == escrow.beneficiary, "Not beneficiary");
+        require(bytes(proofRef).length > 0, "Empty proof");
         require(escrow.state == State.LOCKED, "Invalid state");
 
         escrow.proofRef = proofRef;
         escrow.state = State.PROOF_SUBMITTED;
 
-        emit ProofSubmitted((escrowId), proofRef);
+        emit ProofSubmitted((escrowId), escrow.beneficiary, proofRef);
     }
 
     //approve
@@ -131,4 +132,10 @@ contract Escrow {
 
         emit FundsReleased(escrowId);
     }
+
+    //getter for state
+    function getEscrowState(uint256 escrowId) external view returns (State) {
+        return escrows[escrowId].state;
+    }
+
 }
