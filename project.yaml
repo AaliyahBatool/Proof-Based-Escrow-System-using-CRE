@@ -27,7 +27,7 @@
 staging-settings:
   rpcs:
     - chain-name: ethereum-testnet-sepolia
-      url: https://ethereum-sepolia-rpc.publicnode.com
+      url: http://127.0.0.1:8545
 
 # ==========================================================================
 production-settings:

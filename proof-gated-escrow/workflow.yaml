@@ -16,6 +16,9 @@
 
 # ==========================================================================
 staging-settings:
+  rpcs:
+    - chain-name: ethereum-testnet-sepolia
+      url: http://127.0.0.1:8545
   user-workflow:
     workflow-name: "proof-gated-escrow-staging"
   workflow-artifacts:

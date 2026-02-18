@@ -49,6 +49,7 @@ contract Escrow {
     //constructor
     constructor(address tokenAddress) {
         admin = msg.sender;
+        workflowAddress = msg.sender; //temporary for local development
         token = FundToken(tokenAddress);
     }
 
