@@ -18,14 +18,13 @@
 staging-settings:
   rpcs:
     - chain-name: ethereum-testnet-sepolia
-      url: http://127.0.0.1:8545
+      url: https://eth-sepolia.g.alchemy.com/v2/TrzuJQNBRKVed5sjqDp1ExREhcYAkTda
   user-workflow:
     workflow-name: "proof-gated-escrow-staging"
   workflow-artifacts:
     workflow-path: "./main.ts"
     config-path: "./config.staging.json"
     secrets-path: ""
-    
 
 # ==========================================================================
 production-settings:

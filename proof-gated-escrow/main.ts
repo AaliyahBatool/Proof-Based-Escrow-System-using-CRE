@@ -162,10 +162,6 @@ const verifyProof = (
         "Content-Type": "application/json"
       },
       body,
-      cacheSettings: {
-        readFromCache: true,
-        maxAgeMs: 60000
-      }
     })
     .result()
 

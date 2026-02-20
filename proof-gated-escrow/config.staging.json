@@ -1,6 +1,6 @@
 {
   "chainSelectorName": "ethereum-testnet-sepolia",
-  "escrowAddress": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+  "escrowAddress": "0xd1a9CBC265aD9c7812a1a4D25c2356B733b5e379",
   "verificationUrl": "http://localhost:3001/verify",
   "gasLimit": "500000"
 }
