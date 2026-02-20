@@ -140,7 +140,6 @@ The workflow (`main.ts`) does three things:
 
 - `onlyWorkflow` modifier ensures only the Chainlink forwarder can call `approveEscrow`/`rejectEscrow`
 - In production, `workflowAddress` should be set to the Chainlink Forwarder contract (`0xF8344CFd5c43616a4366C34E3EEE75af79a74482` on Sepolia)
-- Never commit private keys — use `.env` files and add them to `.gitignore`
 
 ---
 
