@@ -56,6 +56,16 @@ LOCKED → PROOF_SUBMITTED → APPROVED → RELEASED
 - Beneficiary can release funds if approved
 
 ---
+## Chainlink CRE Files
+
+| File | Description |
+|------|-------------|
+| `proof-gated-escrow/main.ts` | CRE workflow — trigger, HTTP verify, consensus, onchain write |
+| `proof-gated-escrow/workflow.yaml` | CRE CLI target configuration |
+| `proof-gated-escrow/project.yaml` | RPC configuration for CRE CLI |
+| `proof-gated-escrow/config.staging.json` | Chain selector and contract addresses |
+
+---
 
 ## Contracts (Sepolia Testnet)
 
