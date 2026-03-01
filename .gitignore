@@ -27,7 +27,7 @@ cache/
 out/
 broadcast/
 cache/
-lib/
+contracts/lib/
 
 # =====================================
 # Hardhat
